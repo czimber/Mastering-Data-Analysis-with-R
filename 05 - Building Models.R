@@ -72,6 +72,7 @@ plot(y ~ x3, data = usair, cex.lab = 1.5, main = '2D projection for x3')
 abline(model.1, col = 'red', lwd = 2.5)
 plot(y ~ x2, data = usair, cex.lab = 1.5, main = '2D projection for x2')
 abline(lm(y ~ x2 + x3, data = usair), col = 'red', lwd = 2.5)
+par(mfrow = c(1, 1))  ## Reset number of chart rows to 1 
 
 ##
 
